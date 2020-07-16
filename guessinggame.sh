@@ -8,9 +8,9 @@ function isitmatch {
 		echo "Congrats!"
 		flag=1
 	elif [[ $1 -gt $ans ]] ; then
-		echo "Incorrect. Please try small number."
+		echo "Incorrect. Your guess is too high."
 	else 
-		echo "Incorrect. Please try lerge  number."
+		echo "Incorrect. Your guess is too low."
 	fi	
 }
 
