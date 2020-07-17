@@ -19,7 +19,7 @@ do
 	echo "Quiz:How many files are in the current directory?"
 	read response
 
-	if expr "$response" : '[0-9]*' > /dev/null ; then
+	if expr "$response" : '[0-9]*$' >&/dev/null ; then
 		isitmatch $response	
 	else
 		echo "please input a numerical value"
