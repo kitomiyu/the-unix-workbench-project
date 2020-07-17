@@ -3,7 +3,7 @@
 flag=0
 
 function isitmatch {
-	ans=`ls -A | wc -l`
+	ans=`find . -type f | wc -l`
 	if [[ $1 -eq $ans ]] ; then
 		echo "Congrats!"
 		flag=1
