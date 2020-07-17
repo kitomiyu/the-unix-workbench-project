@@ -1,9 +1,9 @@
 #!/bin/bash
 
 flag=0
+ans=`find . -type f | wc -l`
 
 function isitmatch {
-	ans=`find . -type f | wc -l`
 	if [[ $1 -eq $ans ]] ; then
 		echo "Congrats!"
 		flag=1
